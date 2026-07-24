@@ -27,7 +27,7 @@ with col2:
 
 
 html_7 = """
-<div style="background:rgba(30,136,229,0.08);padding:15px;border-radius:15px;border:1px solid rgba(30,136,229,0.28)">
+<div style="background:rgba(236,64,122,0.08);padding:15px;border-radius:15px;border:1px solid rgba(236,64,122,0.28)">
 <center><h4>ข้อมูลโรคหัวใจสำหรับทำนาย</h4></center>
 </div>
 """
@@ -62,7 +62,7 @@ if st.checkbox("แสดง Pairplot (ใช้เวลาประมวล�
     st.pyplot(fig2)
 
 html_8 = """
-<div style="background:rgba(76,175,80,0.08);padding:15px;border-radius:15px;border:1px solid rgba(76,175,80,0.28)">
+<div style="background:rgba(229,57,53,0.08);padding:15px;border-radius:15px;border:1px solid rgba(229,57,53,0.28)">
 <center><h5>ทำนายข้อมูล</h5></center>
 </div>
 """
