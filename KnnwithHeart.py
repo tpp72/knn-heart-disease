@@ -106,8 +106,5 @@ else:
     st.write("test")
 
 st.markdown("---")
-st.markdown("""
-<div style='text-align: center; opacity: 0.75; padding: 1rem;'>
-    <p>🎓 พัฒนาเพื่อการศึกษา | K-Nearest Neighbor Classifier with Streamlit</p>
-</div>
-""", unsafe_allow_html=True)
+st.markdown("<p style='text-align:center;color:#5a6b8c;margin-top:30px;'>Made with Streamlit · Machine Learning Projects</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align:center;color:#5a6b8c;margin-top:4px;'>Develop By tpp72</p>", unsafe_allow_html=True)
