@@ -6,6 +6,13 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+with st.sidebar:
+    st.header("❤️ เกี่ยวกับโมเดล")
+    st.write("อัลกอริทึม: **K-Nearest Neighbor (K=3)**")
+    st.write("Dataset: **Heart3.csv**")
+    st.divider()
+    st.caption("ผลการทำนายเป็นเพียงตัวอย่างการเรียนรู้ ไม่ใช่การวินิจฉัยทางการแพทย์")
+
 st.title('การทำนายข้อมูลโรคหัวใจด้วยเทคนิค K-Nearest Neighbor')
 #st.image("./img/kairung.jpg")
 col1, col2 = st.columns(2)
@@ -20,7 +27,7 @@ with col2:
 
 
 html_7 = """
-<div style="background-color:#33beff;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<div style="background:rgba(30,136,229,0.08);padding:15px;border-radius:15px;border:1px solid rgba(30,136,229,0.28)">
 <center><h4>ข้อมูลโรคหัวใจสำหรับทำนาย</h4></center>
 </div>
 """
@@ -55,7 +62,7 @@ if st.checkbox("แสดง Pairplot (ใช้เวลาประมวล�
     st.pyplot(fig2)
 
 html_8 = """
-<div style="background-color:#6BD5DA;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<div style="background:rgba(76,175,80,0.08);padding:15px;border-radius:15px;border:1px solid rgba(76,175,80,0.28)">
 <center><h5>ทำนายข้อมูล</h5></center>
 </div>
 """
@@ -97,3 +104,10 @@ if st.button("ทำนายผล"):
 else:
     st.write("ไม่ทำนาย")
     st.write("test")
+
+st.markdown("---")
+st.markdown("""
+<div style='text-align: center; opacity: 0.75; padding: 1rem;'>
+    <p>🎓 พัฒนาเพื่อการศึกษา | K-Nearest Neighbor Classifier with Streamlit</p>
+</div>
+""", unsafe_allow_html=True)
